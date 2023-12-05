@@ -1,0 +1,182 @@
+/* Body */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  font-style: normal;
+  background-color: #ffffff;
+}
+
+/* Heder Logo*/
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.page-accent {
+  color: #2e2f42;
+}
+
+/* Heder Nav */
+.page .page-nav {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+}
+.page .page-nav:hover {
+  color: #404bbf;
+}
+.page .page-nav:focus {
+  color: #404bbf;
+}
+.page-nav:active {
+  color: #404bbf;
+}
+
+/* Heder adress */
+.info {
+  font-style: normal;
+}
+.page-adress {
+  color: var(--SLATE, #434455);
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+}
+.page-adress:hover {
+  color: var(--OCEAN, #404bbf);
+}
+.page-adress:focus {
+  color: #404bbf;
+}
+
+/* Heder 1 */
+.solution {
+  background-color: #2e2f42;
+}
+
+.section-title {
+  color: var(--WHITE, #fff);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 107.143%;
+  letter-spacing: 1.12px;
+  text-align: center;
+}
+
+/* Buton Text*/
+.section-button {
+  font-family: "Roboto", sans-serif;
+  color: var(--WHITE, #fff);
+  background-color: #4d5ae5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+}
+
+.section-button:hover {
+  background-color: #404bbf;
+}
+
+.section-button:focus {
+  background-color: #404bbf;
+}
+
+/* Our advantages */
+.title-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.title-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Team */
+.team {
+  background-color: #f4f4fd;
+}
+.team-title {
+  background: var(--CLOUD, #f4f4fd);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.team-list {
+  background-color: #ffffff;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.team-text {
+  color: #434455;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Portfolio */
+.our-title {
+  background: var(--CLOUD, #f4f4fd);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.our-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.our-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--NAVY-BLUE, #2e2f42);
+  color: #f4f4fd;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.footer-logo {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
