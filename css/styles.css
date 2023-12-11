@@ -27,15 +27,19 @@ ul {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
   /* outline: 2px solid; */
 }
-
+.page-heder {
+  border-bottom: 1px solid #e7e9fc;
+}
 .container-page {
   display: flex;
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid; */
+  /* border-bottom: 1px solid #e7e9fc; */
 }
 
 /* Heder Logo*/
@@ -50,10 +54,12 @@ ul {
   display: flex;
   align-items: center;
   text-decoration: none;
+  /* margin-right: 76px; */
 }
 
 .page {
   display: flex;
+  align-items: center;
 }
 
 .page-list {
@@ -61,6 +67,7 @@ ul {
   gap: 40px;
   margin-right: 332px;
   align-items: center;
+  padding: 24px 0;
 }
 
 .page-accent {
@@ -116,10 +123,7 @@ ul {
 /* Heder 1 */
 .solution {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-right: 472px;
-  padding-bottom: 292px;
-  /* padding-left: 472; */
+  padding: 188px 0;
 }
 .soiution-container {
   /* padding-top: 188px;
@@ -135,6 +139,10 @@ ul {
   letter-spacing: 1.12px;
   text-align: center;
   margin-bottom: 48px;
+}
+.section-title {
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 /* Buton Text*/
@@ -152,6 +160,11 @@ ul {
   align-items: flex-start;
   gap: 10px;
   border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .section-button:hover {
@@ -163,6 +176,9 @@ ul {
 }
 
 /* Our advantages */
+.advanteges {
+  padding: 120px 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -179,7 +195,7 @@ ul {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
 }
 .title-name {
   font-weight: 500;
@@ -187,7 +203,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 120px;
+  /* padding-top: 120px; */
   margin-bottom: 8px;
 }
 .title-text {
@@ -197,7 +213,10 @@ ul {
 }
 
 /* Team */
-
+.team {
+  padding: 120px 0;
+  background: var(--CLOUD, #f4f4fd);
+}
 .team-title {
   background: var(--CLOUD, #f4f4fd);
   font-size: 36px;
@@ -211,15 +230,25 @@ ul {
 .team-container {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
-  background-color: #f4f4fd;
 }
+
 .team-list {
   background-color: #ffffff;
+  background-color: #f4f4fd;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-foto {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
+  display: block;
+}
+.team-border {
+  padding: 32px 0;
+  text-align: center;
 }
 .team-name {
   font-weight: 500;
@@ -228,7 +257,7 @@ ul {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  text-align: center;
+  /* text-align: center; */
 }
 .team-text {
   color: #434455;
@@ -239,25 +268,30 @@ ul {
 }
 
 /* Portfolio */
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #fff;
+}
 .our-title-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 21px;
+  /* gap: 21px; */
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .our-title-img {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 .our-title {
-  background: var(--CLOUD, #f4f4fd);
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .our-name {
   font-weight: 500;
@@ -267,12 +301,17 @@ ul {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+.our-discription {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .our-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
   margin-bottom: 32px;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
 }
 
 /* Footer */
@@ -280,6 +319,10 @@ ul {
 .footer {
   background-color: var(--NAVY-BLUE, #2e2f42);
   color: #f4f4fd;
+  padding: 100px 0;
+}
+.container-footer {
+  display: inline-block;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -289,7 +332,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 
 .footer-logo {
@@ -299,5 +342,5 @@ ul {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
+  max-width: 264px;
 }
