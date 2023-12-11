@@ -22,13 +22,18 @@ ul {
   padding-left: 0;
   list-style-type: none;
 }
-
-.container {
+img {
+  display: block;
+}
+container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   /* outline: 2px solid; */
+}
+container-footer {
+  display: inline-block;
 }
 .page-heder {
   border-bottom: 1px solid #e7e9fc;
@@ -54,7 +59,7 @@ ul {
   display: flex;
   align-items: center;
   text-decoration: none;
-  /* margin-right: 76px; */
+  margin-right: 76px;
 }
 
 .page {
@@ -67,7 +72,7 @@ ul {
   gap: 40px;
   margin-right: 332px;
   align-items: center;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 
 .page-accent {
@@ -76,7 +81,7 @@ ul {
 }
 
 /* Heder Nav */
-.page .page-nav {
+.page-nav {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -84,6 +89,7 @@ ul {
   letter-spacing: 0.32px;
   display: block;
   text-decoration: none;
+  padding: 24px 0;
 }
 .page .page-nav:hover {
   color: #404bbf;
@@ -244,7 +250,7 @@ ul {
 
 .team-foto {
   /* margin-bottom: 32px; */
-  display: block;
+  /* display: block; */
 }
 .team-border {
   padding: 32px 0;
@@ -321,10 +327,10 @@ ul {
   color: #f4f4fd;
   padding: 100px 0;
 }
-.container-footer {
+/* .container-footer {
   display: inline-block;
-}
-.logo {
+} */
+.logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
