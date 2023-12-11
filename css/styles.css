@@ -5,9 +5,40 @@ body {
   font-style: normal;
   background-color: #ffffff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid; */
+}
+
+.container-page {
+  display: flex;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid; */
+}
 
 /* Heder Logo*/
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -16,10 +47,25 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.page {
+  display: flex;
+}
+
+.page-list {
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
+  align-items: center;
 }
 
 .page-accent {
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 /* Heder Nav */
@@ -29,6 +75,8 @@ body {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.32px;
+  display: block;
+  text-decoration: none;
 }
 .page .page-nav:hover {
   color: #404bbf;
@@ -44,11 +92,19 @@ body {
 .info {
   font-style: normal;
 }
+.page-adress-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .page-adress {
   color: var(--SLATE, #434455);
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.32px;
+  display: block;
+  text-decoration: none;
 }
 .page-adress:hover {
   color: var(--OCEAN, #404bbf);
@@ -60,15 +116,25 @@ body {
 /* Heder 1 */
 .solution {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-right: 472px;
+  padding-bottom: 292px;
+  /* padding-left: 472; */
 }
-
-.section-title {
+.soiution-container {
+  /* padding-top: 188px;
+  padding-right: 472px;
+  padding-bottom: 292px;
+  padding-left: 472; */
+}
+.soiution-container .section-title {
   color: var(--WHITE, #fff);
   font-size: 56px;
   font-weight: 700;
   line-height: 107.143%;
   letter-spacing: 1.12px;
   text-align: center;
+  margin-bottom: 48px;
 }
 
 /* Buton Text*/
@@ -81,6 +147,11 @@ body {
   line-height: 150%;
   letter-spacing: 0.64px;
   cursor: pointer;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
 }
 
 .section-button:hover {
@@ -92,22 +163,41 @@ body {
 }
 
 /* Our advantages */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.title-advanteges {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 200px;
+}
 .title-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 120px;
+  margin-bottom: 8px;
 }
 .title-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
 }
 
 /* Team */
-.team {
-  background-color: #f4f4fd;
-}
+
 .team-title {
   background: var(--CLOUD, #f4f4fd);
   font-size: 36px;
@@ -116,9 +206,20 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+.team-container {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+  background-color: #f4f4fd;
 }
 .team-list {
   background-color: #ffffff;
+}
+
+.team-foto {
+  margin-bottom: 32px;
 }
 .team-name {
   font-weight: 500;
@@ -126,14 +227,27 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
 }
 .team-text {
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 /* Portfolio */
+.our-title-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.our-title-img {
+  margin-bottom: 32px;
+}
 .our-title {
   background: var(--CLOUD, #f4f4fd);
   font-size: 36px;
@@ -142,6 +256,8 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 .our-name {
   font-weight: 500;
@@ -149,11 +265,14 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .our-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 32px;
+  padding-bottom: 120px;
 }
 
 /* Footer */
@@ -170,6 +289,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 17.5px;
 }
 
 .footer-logo {
@@ -179,4 +299,5 @@ body {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
 }
