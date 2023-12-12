@@ -25,17 +25,14 @@ ul {
 img {
   display: block;
 }
-container {
+.container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid; */
 }
-container-footer {
-  display: inline-block;
-}
-.page-heder {
+
+.page-header {
   border-bottom: 1px solid #e7e9fc;
 }
 .container-page {
@@ -172,11 +169,9 @@ container-footer {
   height: 56px;
   border: none;
 }
-
 .section-button:hover {
   background-color: #404bbf;
 }
-
 .section-button:focus {
   background-color: #404bbf;
 }
@@ -201,7 +196,9 @@ container-footer {
   display: flex;
   gap: 24px;
   justify-content: center;
-  /* padding-bottom: 200px; */
+}
+.title-list {
+  width: calc((100% - 72px) / 4);
 }
 .title-name {
   font-weight: 500;
@@ -209,7 +206,6 @@ container-footer {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  /* padding-top: 120px; */
   margin-bottom: 8px;
 }
 .title-text {
@@ -246,6 +242,7 @@ container-footer {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 72px) / 4);
 }
 
 .team-foto {
@@ -299,6 +296,10 @@ container-footer {
   color: #2e2f42;
   margin-bottom: 72px;
 }
+
+.portfolio-list {
+  width: calc((100% - 72px) / 4);
+}
 .our-name {
   font-weight: 500;
   font-size: 20px;
@@ -326,10 +327,9 @@ container-footer {
   background-color: var(--NAVY-BLUE, #2e2f42);
   color: #f4f4fd;
   padding: 100px 0;
+  /* display: inline-block; */
 }
-/* .container-footer {
-  display: inline-block;
-} */
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -339,6 +339,7 @@ container-footer {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-logo {
