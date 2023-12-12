@@ -37,11 +37,9 @@ img {
 }
 .container-page {
   display: flex;
-  width: 1158px;
-  padding-left: 15px;
+  /* width: 1158px;
+  padding-left: 15px; */
   padding-right: 15px;
-  /* outline: 2px solid; */
-  /* border-bottom: 1px solid #e7e9fc; */
 }
 
 /* Heder Logo*/
@@ -56,7 +54,7 @@ img {
   display: flex;
   align-items: center;
   text-decoration: none;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 
 .page {
@@ -299,6 +297,7 @@ img {
 
 .portfolio-list {
   width: calc((100% - 72px) / 4);
+  width: 360px;
 }
 .our-name {
   font-weight: 500;
